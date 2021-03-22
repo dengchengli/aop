@@ -14,7 +14,7 @@ public interface StudentMapper {
 
     @Options(timeout = 10000,  flushCache = Options.FlushCachePolicy.TRUE)
     @Select("select * from student where id= #{id}")
-    Student getById(int id);
+    Student getById(Integer id);
 
     @Options(timeout = 0, flushCache = Options.FlushCachePolicy.TRUE)
     @Select("select * from student")
