@@ -37,7 +37,7 @@ class TestMapperProxyTest {
         clone.setCloneAllBranches(false);
         clone.setBare(false);
         clone.setDirectory(direcotry).setURI(remoteUrl);
-        UsernamePasswordCredentialsProvider user = new UsernamePasswordCredentialsProvider("heyu", "Xiaokeai9899");
+        UsernamePasswordCredentialsProvider user = new UsernamePasswordCredentialsProvider("heyu", "*********");
         clone.setCredentialsProvider(user);
         clone.call();
         Ref ref = repository.findRef("refs/remotes/origin/dev" );
